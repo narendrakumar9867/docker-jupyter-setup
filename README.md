@@ -36,8 +36,7 @@ docker build -t jupyter-notebook .
 ### Step 5 — Run the Container
 
 ```bash
-docker run -d -p 8888:8888 -v <your-local-folder>:/app/notebooks --name my-jupyter jupyter-notebook
-docker start my-jupyter
+docker-compose up -d
 ```
 
 ### Step 6 — Open in Browser
